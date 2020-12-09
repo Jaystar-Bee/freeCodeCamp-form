@@ -1,0 +1,105 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+
+}
+body {
+    font-family:  'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+    line-height: 1.6;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #fff;
+}
+.cover {
+    background-image: linear-gradient(to right,
+    rgba(55, 56, 134, 0.8),
+    rgba(55, 56, 134, 0.8)),
+      url(./pexels-fox-1595387.jpg);
+    height: 100%; 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -5;
+}
+.container {
+    max-width: 700px;
+    margin: 4rem auto;
+    text-align: center;
+}
+.title {
+    font-size: 3rem;
+}
+.title__sub {
+    font-style: italic;
+    font-size: 1.9rem;
+    font-weight: 300;
+}
+.form__cover {
+    background-color: rgba(41, 41, 72, .8);
+    margin: 4rem 0;
+    border-radius: .5rem;
+    padding: 4rem;
+    text-align: left;
+    font-size: 1.9rem;
+}
+.form__list {
+    display: block;
+}
+.label {
+    display: block;
+    margin: 1rem 0;
+}
+.label span {
+    font-size: 1.5rem;
+}
+.form__box, select, #textarea{
+    padding: 1rem;
+    font-size: 1.8rem;
+    width: 100%;
+    border-radius: .3rem;
+    border: none;
+    margin-bottom: 1rem;
+    resize: vertical;
+}
+.form__box:focus, select:focus {
+    outline: none;
+    box-shadow: 0px 0px 2px 3px rgb(3, 101, 182);
+}
+.form__box::-webkit-input-placeholder, select option, select, #textarea::-webkit-input-placeholder {
+    
+    color: rgb(121, 121, 121);
+}
+.form__radio, .form__checkbox {
+    transform: scale(1.7);
+    margin-right: 1rem;
+}
+#textarea::-webkit-input-placeholder {
+    font-family:  'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+}
+.submit {
+    padding: 1rem;
+    width: 100%;
+    background-color: #37AF65;
+    border: none;
+    color: #fff;
+    font-size: 1.8rem;
+    border-radius: .3rem;
+}
+
+@media only screen and (max-width: 28em) {
+
+    html {
+        font-size: 55%;
+    }
+    .form__cover {
+        padding: 2.5rem;
+    }
+}
